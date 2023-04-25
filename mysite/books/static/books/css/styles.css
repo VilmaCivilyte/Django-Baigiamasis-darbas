@@ -1,0 +1,15 @@
+body{
+    background-color: #dde8f0;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+}
+
+#booksmain{
+    border-radius: 20px;
+    box-shadow: 5px 10px #888888;
+    margin: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+

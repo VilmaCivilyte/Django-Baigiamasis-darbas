@@ -1,0 +1,30 @@
+{% extends 'books/base.html' %}
+{% block content %}
+
+<br>
+<div class="container mt-1">
+<h4>{{ title2 }}</h4>
+
+<form class="form-inline my-2 my-lg-0" style="display:flex;">
+  <input class="form-control mr-sm-2" type="search" placeholder="Ieškoti" />
+  <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit" style="margin-left: 10px;"> Ieškoti </button>
+</form>
+
+<div class="row">
+  {% for q in allauthors %}
+    <div class="card" style="margin: 10px; display:flex;" >
+      <img class="rounded" src="{{q.photo.url}}" alt="Card image cap" height="auto" width="200" style="margin-top: 10px;">
+      <div class="card-body">
+        <h5 class="card-title">{{q.full_name}}</h5>
+        <p class="card-text">{{q.about_author}}</p>
+        <!-- <a href="#" class="btn btn-primary" style="background-color: rgb(165, 164, 164); border:rgb(221, 220, 220)">Žiūrėti autoriaus knygas</a> -->
+      </div>
+    </div>
+  {% endfor %}
+</div>
+</div>
+
+
+
+
+{% endblock %}

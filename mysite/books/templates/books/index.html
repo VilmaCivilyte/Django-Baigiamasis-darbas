@@ -1,0 +1,28 @@
+{% extends 'books/base.html' %}
+
+{% block content %}
+
+<br>
+<div class="container mt-3">
+
+    <h4 style="font-family:verdana; text-align:center;"> Rekomenduokite perskaityti knygą! </h4>
+    <div class="container mt-3">
+        <img src="https://nuotraukos.mediakatalogas.lt/thumbs/book-2265490_1280.jpg" alt="Knyga pagrindiniame"
+            width="500" height="272" id="booksmain" name="booksmain"
+            style="border-radius: 15%; box-shadow: 10px; text-align:center" class="mx-auto d-block">
+    </div>
+    <br>
+    <h6 style="text-align: center;">Puslapis skirtas dalintis patirtimi apie perskaitytą knygą ir ją rekomenduoti kitiems.</h6>
+    <hr>
+</div>
+<br>
+<div class="container mt-3" style="height: 50%; width: 25%; border: 1px solid rgb(175, 174, 174); border-radius: 10px; padding: 20px; margin-left:30px">
+    <h6>Puslapio statistika:</h6>
+    <p>Rekomenduotinų knygų skaičius: {{ books_count }}</p>
+    <p>Knygų autorių skaičius: {{ book_author_count }}</p>
+    <p>Šioje svetaineje apsilankė {{ num_visits }} lankytojų(/-ai).</p>
+</div>
+<br>
+
+
+{% endblock %}
